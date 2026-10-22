@@ -1,0 +1,330 @@
+/* =========================================
+   PÁGINA DE ALIMENTACIÓN
+   Usa las variables y componentes de styles.css
+   ========================================= */
+
+/* PORTADA */
+
+.ali-hero {
+  padding: 65px 0;
+  background: #eaf3fb;
+}
+
+.ali-hero-panel {
+  padding: clamp(32px, 6vw, 75px);
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0 18px 55px rgba(27, 58, 94, 0.08);
+}
+
+.ali-eyebrow {
+  display: block;
+  margin-bottom: 15px;
+  color: #718197;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  line-height: 1.6;
+}
+
+.ali-hero h1 {
+  max-width: 850px;
+  margin-bottom: 24px;
+  color: #172f50;
+  font-size: clamp(2.1rem, 5vw, 3.7rem);
+  line-height: 1.15;
+  letter-spacing: -0.045em;
+}
+
+.ali-hero h1 span {
+  display: block;
+  color: #24568c;
+}
+
+.ali-intro {
+  max-width: 640px;
+  margin-bottom: 28px;
+  color: #667386;
+  font-size: 1.05rem;
+  line-height: 1.9;
+}
+
+
+/* SECCIONES */
+
+.ali-section {
+  padding: 85px 0;
+  background: #fff;
+}
+
+.ali-section-light {
+  background: #f7f9fc;
+}
+
+.ali-heading {
+  max-width: 780px;
+  margin: 0 auto 42px;
+}
+
+.ali-heading h2,
+.ali-notice h2 {
+  margin-bottom: 18px;
+  color: #172f50;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: -0.04em;
+}
+
+.ali-heading p,
+.ali-notice p {
+  margin-bottom: 0;
+  color: #667386;
+  font-size: 0.97rem;
+  line-height: 1.9;
+}
+
+
+/* TARJETAS (reglas y consejos) */
+
+.ali-card {
+  padding: 30px;
+  border: 1px solid #e9eef4;
+  border-radius: 17px;
+  background: #fff;
+  box-shadow: 0 8px 28px rgba(31, 55, 82, 0.035);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ali-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 35px rgba(31, 55, 82, 0.09);
+}
+
+.ali-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  margin-bottom: 24px;
+  border-radius: 16px;
+  font-size: 1.65rem;
+}
+
+.ali-card .icon-blue,
+.ali-meal .icon-blue { color: #24568c; background: #e5f0fc; }
+.ali-card .icon-peach,
+.ali-meal .icon-peach { color: #a34e3e; background: #fff0e9; }
+.ali-card .icon-green,
+.ali-meal .icon-green { color: #34735f; background: #e4f5ed; }
+
+.ali-card h3 {
+  margin-bottom: 12px;
+  color: #172f50;
+  font-size: 1.15rem;
+  font-weight: 800;
+  line-height: 1.45;
+  letter-spacing: -0.025em;
+}
+
+.ali-card p {
+  margin-bottom: 0;
+  color: #667386;
+  font-size: 0.91rem;
+  line-height: 1.85;
+}
+
+
+/* SELECTOR SIN / CON DIABETES */
+
+.ali-tabs {
+  gap: 8px;
+  margin-bottom: 34px;
+  padding: 0;
+  border: 0;
+}
+
+.ali-tabs .nav-link {
+  padding: 0.78rem 1.5rem;
+  border: 1px solid #b9c7d8;
+  border-radius: 999px;
+  background: #fff;
+  color: #123b73;
+  font-size: 0.82rem;
+  font-weight: 700;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.ali-tabs .nav-link:hover {
+  background: #f5f8fc;
+  border-color: #123b73;
+}
+
+.ali-tabs .nav-link.active {
+  border-color: #123b73;
+  background: #123b73;
+  color: #fff;
+}
+
+
+/* TARJETAS DE COMIDAS */
+
+.ali-meal {
+  padding: 30px;
+  border: 1px solid #e9eef4;
+  border-radius: 17px;
+  background: #fff;
+  box-shadow: 0 8px 28px rgba(31, 55, 82, 0.035);
+}
+
+.ali-meal-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 22px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.ali-meal-icon {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  font-size: 1.45rem;
+}
+
+.ali-meal h3 {
+  margin: 0;
+  color: #172f50;
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+}
+
+.ali-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ali-list li {
+  position: relative;
+  padding-left: 22px;
+  color: #4a586b;
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+.ali-list li::before {
+  content: "";
+  position: absolute;
+  top: 0.65em;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ee7966;
+}
+
+
+/* AVISO FINAL */
+
+.ali-section-notice {
+  padding: 20px 0 85px;
+}
+
+.ali-notice {
+  display: grid;
+  grid-template-columns: 75px minmax(0, 1fr);
+  gap: 28px;
+  align-items: start;
+  padding: clamp(28px, 5vw, 50px);
+  border: 1px solid #f0e7d9;
+  border-radius: 22px;
+  background: #fffbf5;
+}
+
+.ali-notice h2 {
+  margin-bottom: 10px;
+  font-size: clamp(1.4rem, 2.6vw, 1.9rem);
+}
+
+.ali-notice-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+  background: #fff0d6;
+  font-size: 2rem;
+}
+
+
+/* ACCESIBILIDAD */
+
+.ali-tabs .nav-link:focus-visible,
+.ali-card:focus-within {
+  outline: 3px solid #9bc5f1;
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ali-card,
+  .ali-tabs .nav-link {
+    transition: none;
+  }
+  .ali-card:hover {
+    transform: none;
+  }
+}
+
+
+/* TABLETS Y CELULARES */
+
+@media (max-width: 767.98px) {
+  .ali-hero { padding: 28px 0; }
+
+  .ali-hero-panel {
+    padding: 30px 24px;
+    border-radius: 16px;
+  }
+
+  .ali-intro {
+    font-size: 0.93rem;
+    line-height: 1.8;
+  }
+
+  .ali-section { padding: 58px 0; }
+  .ali-heading { margin-bottom: 30px; }
+  .ali-card,
+  .ali-meal { padding: 25px; }
+
+  .ali-section-notice { padding: 10px 0 58px; }
+
+  .ali-notice {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 28px 23px;
+  }
+
+  .ali-notice-icon {
+    width: 58px;
+    height: 58px;
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .ali-tabs { flex-direction: column; }
+  .ali-tabs .nav-link { width: 100%; }
+}
